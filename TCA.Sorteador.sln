@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.Entidades", "TCA.Nucleo.Entidades\TCA.Nucleo.Entidades.csproj", "{E8FF6729-F45B-4FE0-B57C-99864AF2AD31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.Testes", "TCA.Nucleo.Testes\TCA.Nucleo.Testes.csproj", "{A9900128-1F3D-45D6-B8BA-78A9CAC9B0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.CasosDeUso", "TCA.Nucleo.CasosDeUso\TCA.Nucleo.CasosDeUso.csproj", "{B74083CB-E1C8-4290-9A38-17CFEAFC0692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.DAL.Interfaces", "TCA.Nucleo.DAL.Interfaces\TCA.Nucleo.DAL.Interfaces.csproj", "{5A101DC5-A710-488C-8DA4-C8A66FAAE9B8}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TCA.Modelagem", "TCA.Modelagem\TCA.Modelagem.modelproj", "{E9309984-512E-48A1-A910-5C1750A1089F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8FF6729-F45B-4FE0-B57C-99864AF2AD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FF6729-F45B-4FE0-B57C-99864AF2AD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FF6729-F45B-4FE0-B57C-99864AF2AD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FF6729-F45B-4FE0-B57C-99864AF2AD31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9900128-1F3D-45D6-B8BA-78A9CAC9B0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9900128-1F3D-45D6-B8BA-78A9CAC9B0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9900128-1F3D-45D6-B8BA-78A9CAC9B0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9900128-1F3D-45D6-B8BA-78A9CAC9B0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74083CB-E1C8-4290-9A38-17CFEAFC0692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74083CB-E1C8-4290-9A38-17CFEAFC0692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74083CB-E1C8-4290-9A38-17CFEAFC0692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74083CB-E1C8-4290-9A38-17CFEAFC0692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A101DC5-A710-488C-8DA4-C8A66FAAE9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A101DC5-A710-488C-8DA4-C8A66FAAE9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A101DC5-A710-488C-8DA4-C8A66FAAE9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A101DC5-A710-488C-8DA4-C8A66FAAE9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9309984-512E-48A1-A910-5C1750A1089F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9309984-512E-48A1-A910-5C1750A1089F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9309984-512E-48A1-A910-5C1750A1089F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9309984-512E-48A1-A910-5C1750A1089F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

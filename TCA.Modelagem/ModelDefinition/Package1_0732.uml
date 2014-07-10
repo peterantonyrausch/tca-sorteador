@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c6cd69bd-fef1-4ef7-a5b0-bf6bc2630446"
+  name="Nucleo"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="7428c306-c453-4550-bc4e-d529b3af3263"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="32cc8e93-b138-4851-8950-0df59ebf922a"
+        LastKnownName="CasosDeUso"
+        LastKnownLocation="Package2_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b2f2d567-ec71-4c41-a016-3bcc33c3613f"
+        LastKnownName="DAL"
+        LastKnownLocation="Package5_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="281dc325-d455-42b4-a5bc-442f449e42d1"
+        LastKnownName="Entidades"
+        LastKnownLocation="Package11_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="32838159-8c7a-4bea-be0c-5a85711d64b9"
+        LastKnownName="Testes"
+        LastKnownLocation="Package_0806.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

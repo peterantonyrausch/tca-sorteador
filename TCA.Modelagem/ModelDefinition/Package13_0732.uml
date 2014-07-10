@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7262d963-a577-4a69-8afe-e08285377fb6"
+  name="AcoesInterfaces"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e04a9c3f-53e8-418b-98e6-7652fc105371"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.AcoesInterfaces"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="5fbb70e1-f3e7-42dd-b4e7-1a1db03c6616"
+        name="RequisicaoParaCadastrarListaSorteio"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b3e0a226-09d9-4150-8eaa-377b4c674376"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.AcoesInterfaces Type%3DRequisicaoParaCadastrarListaSorteio"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a811b24e-1b38-4656-8270-afbc75188a5e"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc57884f-66c8-4e94-bc00-4624ed701ebb">
+                <propertyInstance
+                  Id="e81e80a4-ea7f-4857-a46a-df3b5a805745"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0a065a1-c33c-4fdf-b99e-9f550347050c">
+                <propertyInstance
+                  Id="8b26695f-d9e9-4eac-a39c-fd0eab78005c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2edb7a6-cfb4-4571-a6db-4f74cb5da909">
+                <propertyInstance
+                  Id="4ba68bee-e171-49c2-a942-3d13f8daf79b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="82fe2f54-fdb8-4974-a560-f65d1a68bcb4">
+                <propertyInstance
+                  Id="72763257-ffa5-4982-8261-522d713ab024"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="aad8f729-58a9-4bec-b27a-353b40bcbcad"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="230b1e5e-3456-401c-bf7d-b4a2d45fa29c"
+              LastKnownName="Requisicao&lt;DadosEntradaCadastrarListaSorteio‎, RespostaRequisicao‎&lt;DadosSaidaCadastrarListaSorteio‎&gt;‎&gt;"
+              LastKnownLocation="Package9_0732.uml" />
+          </generalization>
+          <generalization
+            Id="ff4e2196-0c8a-4dc4-b1ff-56b503351bb6"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="b7ce510c-eba6-4a10-b25b-6faf71985482"
+              LastKnownName="Requisicao"
+              LastKnownLocation="Package9_0732.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d7c0ddcb-3b92-4860-9b62-c429411ac8ed"
+  name="Mocks"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6287cdd7-945e-4da6-8e99-a9f76b88ba60"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.Testes.Mocks"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b52a1f4c-066f-447e-b734-9818e8146d2b"
+        name="MockRepositorioListaSorteio"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e5b3a9f2-7fc2-4b81-b0bf-44058d3022df"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.Testes%2Fbin%2FDebug%2FTCA.Nucleo.Testes.dll Namespace%3DTCA.Nucleo.Testes.Mocks Type%3DMockRepositorioListaSorteio"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="075a11b3-9ad7-4a69-bd22-e1ec3ad0e57c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5f7e2214-f7aa-4498-a705-7ceca0f588ed">
+                <propertyInstance
+                  Id="a985d3da-8e3a-4059-8c8e-5bfbfd03891d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d66f038c-be44-4d44-9420-ed51b93eb828">
+                <propertyInstance
+                  Id="27f12b69-60df-46d1-a55f-91d7127db2f7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ee2b910-7db8-47f4-b41f-2421c6059729">
+                <propertyInstance
+                  Id="369890be-3d2a-4131-970c-8546bfd0c01f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="02bddc73-b82d-4bf5-ac2e-8a5aaa33e541">
+                <propertyInstance
+                  Id="c1bab0b7-8600-47f7-8fdc-2657c38e9203"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9150a81e-308a-420e-b0b7-a02c021baa39">
+                <propertyInstance
+                  Id="fe79abdb-ceea-4170-9497-8572c3a52195"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2dab3c77-1fba-4b70-bf3f-91ba499078fc">
+            <interfaceMoniker
+              Id="dc588ac3-5b13-4a9e-8da1-8f668aefe567"
+              LastKnownName="RepositorioListaSorteio"
+              LastKnownLocation="Package7_0732.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="c51face4-765e-47f2-b5e7-78f2f26db7a4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f2fab47d-7f93-4391-a04e-5584d5635555"
+              LastKnownName="Mock&lt;ListaSorteio‎&gt;"
+              LastKnownLocation="Package1_0806.uml" />
+          </generalization>
+          <generalization
+            Id="ed36355f-a28c-44f4-acef-f1b56ce5dbd0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="09f4579c-0735-4359-b6b6-573c98a09db4"
+              LastKnownName="Mock"
+              LastKnownLocation="Package1_0806.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dcc66707-a9d8-4639-8fc2-41416b24fe1f"
+            name="MockRepositorioListaSorteio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="27193767-27bb-43c7-8ef4-2fc4b5a6ce27"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.Testes%2Fbin%2FDebug%2FTCA.Nucleo.Testes.dll Namespace%3DTCA.Nucleo.Testes.Mocks Type%3DMockRepositorioListaSorteio Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7781d14a-74f0-4c60-b25d-d9bcc5037983"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="895ea842-2d77-4063-9980-742b716fd1af">
+                    <propertyInstance
+                      Id="c9a55594-a14f-4eb0-8f41-d9a71159c1d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef9d5b24-34b5-42d1-8326-184008ce83a0">
+                    <propertyInstance
+                      Id="48c17fe5-75c2-4923-9ca1-d95ba6abdd3e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cd13055-34f6-4cd5-8ac7-a106ba0690ca">
+                    <propertyInstance
+                      Id="6afd446b-8529-4253-97e3-6003da86c765"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29284f2a-5456-41ac-85fc-a4a349bf37ed">
+                    <propertyInstance
+                      Id="9984ea7c-6299-40e0-8476-25fc4b9bfa7e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b645e1c8-847b-4423-af48-77c43b73bb13">
+                    <propertyInstance
+                      Id="4ec72f51-78ff-403c-98ac-3ce9ecf9c127"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5762561-b35d-4d7e-8a65-5a737f6770e2">
+                    <propertyInstance
+                      Id="d33ce4ec-ccfa-43f4-a586-de95d6342554"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ba02c18b-f97d-4315-90e4-85848b89ceda"
+            name="Atualizar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4c0a0f9d-a7a3-47dd-b5a7-296813079e00"
+                  name="entidade"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="724d334e-e623-46a2-a890-889e3756b3da"
+                      LastKnownName="TEntidade"
+                      LastKnownLocation="Package_0800.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3a15e2e5-e3ff-4097-b5c1-7bba64edd32f"
+            name="Excluir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c7278799-9dc8-4282-bd93-a5369ef15b17"
+                  name="id"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a0f3f928-6e4e-4774-9802-7e9d58798755"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package_0759.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="27beaa85-bf88-4f90-8bca-c6a5a9c9bf67"
+            name="Inserir"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a9e08b4-66a6-43b0-b225-934416e268f1"
+                  name="entidade"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="724d334e-e623-46a2-a890-889e3756b3da"
+                      LastKnownName="TEntidade"
+                      LastKnownLocation="Package_0800.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1a99dd38-6176-4d20-8953-2eee09441b35"
+            name="Obter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ebc8f43-4c14-4e2e-9106-6fce9f9fae56"
+                  name="id"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a0f3f928-6e4e-4774-9802-7e9d58798755"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package_0759.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c65ab703-6d37-4467-a2dc-084eeadd3673"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="724d334e-e623-46a2-a890-889e3756b3da"
+                      LastKnownName="TEntidade"
+                      LastKnownLocation="Package_0800.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ed9899e3-f6c3-45be-9dab-b5ae41761c19"
+            name="Listar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9da94a99-6239-4cf9-9a70-a72f322ee2aa"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="6bac1a21-0279-46bf-8b1c-7b9b11aba37f"
+                      LastKnownName="IEnumerable&lt;TEntidade‎&gt;"
+                      LastKnownLocation="Package2_0800.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="32cc8e93-b138-4851-8950-0df59ebf922a"
+  name="CasosDeUso"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e75b75fb-8c95-4398-bc3d-ca3e7a841b18"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.CasosDeUso"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f7ef9a69-027c-4c9a-a072-7b6ce09619b2"
+        LastKnownName="ListaSorteio"
+        LastKnownLocation="Package3_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2f567da3-fb43-4263-ae30-db3bbcae54b5"
+        LastKnownName="Base"
+        LastKnownLocation="Package9_0732.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

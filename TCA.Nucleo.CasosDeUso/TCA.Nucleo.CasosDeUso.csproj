@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B74083CB-E1C8-4290-9A38-17CFEAFC0692}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCA.Nucleo.CasosDeUso</RootNamespace>
+    <AssemblyName>TCA.Nucleo.CasosDeUso</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\DadosEntrada.cs" />
+    <Compile Include="Base\DadosSaida.cs" />
+    <Compile Include="Base\Requisicao.cs" />
+    <Compile Include="Base\RespostaRequisicao.cs" />
+    <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\Acoes\CadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\DadosSaida\DadosSaidaCadastrarListaSorteio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TCA.Nucleo.DAL.Interfaces\TCA.Nucleo.DAL.Interfaces.csproj">
+      <Project>{5a101dc5-a710-488c-8da4-c8a66faae9b8}</Project>
+      <Name>TCA.Nucleo.DAL.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TCA.Nucleo.Entidades\TCA.Nucleo.Entidades.csproj">
+      <Project>{e8ff6729-f45b-4fe0-b57c-99864af2ad31}</Project>
+      <Name>TCA.Nucleo.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ListaSorteio\Excecoes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

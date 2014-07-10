@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="32838159-8c7a-4bea-be0c-5a85711d64b9"
+  name="Testes"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="056f4f6a-eda6-4e5c-97e4-59f88ec6ee79"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.Testes"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0d88d5f7-9871-4b2d-a33f-9084a097bb47"
+        LastKnownName="Base"
+        LastKnownLocation="Package1_0806.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d7c0ddcb-3b92-4860-9b62-c429411ac8ed"
+        LastKnownName="Mocks"
+        LastKnownLocation="Package2_0806.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0642bde1-ed67-4228-9f8f-1917356e7d75"
+        LastKnownName="CasosDeUso"
+        LastKnownLocation="Package3_0806.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="98667101-7e66-4e49-9d1c-71f958140cd3"
+  name="Acoes"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="68dec54e-999d-45d1-9dc1-d023f4304143"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="26d9a1c4-5c95-4163-977e-435fc88a7df4"
+        name="CadastrarListaSorteio"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b460e1ce-914a-4162-a583-8d1a75c839a3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a3e6bcfa-f2d3-4b99-b642-7282fb72d232"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1cdb25f7-9936-4276-96eb-7b00459417f8">
+                <propertyInstance
+                  Id="4af61773-e5b3-45bb-8a57-2330f067dec8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="02dc1abd-516c-405e-8c5a-55f4025c7be9">
+                <propertyInstance
+                  Id="8db592fe-00b0-4cca-a6b6-fa6860d0506f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b9d811b-67f0-4635-af03-482782adf812">
+                <propertyInstance
+                  Id="f81e61a8-67bb-4009-b8a0-fabce209cf9c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="58abf049-1dc5-4f8c-a01e-68c77d8ba67f">
+                <propertyInstance
+                  Id="f738ab48-00ce-4cde-89b2-76eec7ecb3f0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc67d0f0-06c6-45f4-b463-a9d95143376d">
+                <propertyInstance
+                  Id="2ac6a751-c5b5-4de6-9823-733d7db4a958"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c81e15dd-7ddf-4c93-a2de-5c04a7190c89">
+            <interfaceMoniker
+              Id="5fbb70e1-f3e7-42dd-b4e7-1a1db03c6616"
+              LastKnownName="RequisicaoParaCadastrarListaSorteio"
+              LastKnownLocation="Package13_0732.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="768bb207-a2c2-42a1-a542-d5e2260d93af"
+            name="repositorioListaSorteio"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c7c2c925-cb59-4b57-8ced-8619f1b91ed5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3DrepositorioListaSorteio"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="31c91a12-e029-4868-902d-c35b43566216"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35938158-7b6d-46ed-b138-820f701d038a">
+                    <propertyInstance
+                      Id="a9d2ec8a-1f12-44bc-8162-d5164d5146a1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8b73409-dcd2-4062-a1d6-3a6d1869dd77">
+                    <propertyInstance
+                      Id="4a06b4f7-5cac-4ad9-bd4f-3f8eda40ca6b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f22a7e97-6c41-4011-8e1f-1d77ca67a9c0">
+                    <propertyInstance
+                      Id="f4281ef0-032f-46ad-91f1-766bba060b5a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da86bcd0-4520-4928-a21c-185b15e94981">
+                    <propertyInstance
+                      Id="3c27d139-ff5b-487b-8cd3-2420394cb2a9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cc59c60-a2c6-4a45-a2e7-f56490dfbef6">
+                    <propertyInstance
+                      Id="64c8eb47-07f9-458d-af74-f7fb8464bb2c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="dc588ac3-5b13-4a9e-8da1-8f668aefe567"
+                LastKnownName="RepositorioListaSorteio"
+                LastKnownLocation="Package7_0732.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2d57f346-1179-4b20-98d2-9edcb1145b8d"
+            name="CadastrarListaSorteio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="68292498-ca2d-40b2-b40b-281db7df6c9c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.DAL.Interfaces%2Fbin%2FDebug%2FTCA.Nucleo.DAL.Interfaces.dll Namespace%3DTCA.Nucleo.DAL.Interfaces.ListaSorteio Type%3DRepositorioListaSorteio)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e1aeffa0-e438-426b-9bb1-b5291bec6201"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44c5fd62-46d9-4771-8706-319fc53befe8">
+                    <propertyInstance
+                      Id="2f85e9d6-f8c6-4820-855d-fdb66df479f9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ee85dd5-af6e-4383-9c5c-9a5eaf23a25b">
+                    <propertyInstance
+                      Id="243e64c3-533f-4fb7-a78c-d83d3c27c701"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b29dbb15-9218-40a0-807a-3390f00c6993">
+                    <propertyInstance
+                      Id="41d47657-d50a-4212-a2c1-720c74f7f675"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b94bb58b-edb8-4889-b467-2c874151bc3a">
+                    <propertyInstance
+                      Id="30446b6a-8bdb-419a-93ff-7cd06c7d5a5d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87300431-79ea-4f38-b6fc-d2bce70acbe7">
+                    <propertyInstance
+                      Id="e6b65493-87be-489c-999a-6c9038b20ef3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5080fd43-7bd1-4d2d-be45-0dd179f5d0cc">
+                    <propertyInstance
+                      Id="2a76a8af-a5a4-40f6-94e2-bab84c1e4736"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1453764b-fea9-4814-89c2-3cc84e41513d"
+                  name="repositorioListaSorteio"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6f7bf202-e84d-4db5-b294-368931998ae3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.DAL.Interfaces%2Fbin%2FDebug%2FTCA.Nucleo.DAL.Interfaces.dll Namespace%3DTCA.Nucleo.DAL.Interfaces.ListaSorteio Type%3DRepositorioListaSorteio)]) ParameterIdentifier%3DrepositorioListaSorteio"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="dc588ac3-5b13-4a9e-8da1-8f668aefe567"
+                      LastKnownName="RepositorioListaSorteio"
+                      LastKnownLocation="Package7_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fc230da1-2afb-436c-9334-2912ac846763"
+            name="ObterListaSorteio"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f02d5b78-a03d-45e4-8279-9e4068abb5d2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3DObterListaSorteio OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada Type%3DDadosEntradaCadastrarListaSorteio)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19d7d2d0-c30e-4401-93ce-f19be9e8d402"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b290b33-08f6-4cc2-bcb7-60528f6b1156">
+                    <propertyInstance
+                      Id="f14b1f2b-b2a3-4d34-9f91-5e7e193b9175"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37f52c5e-46e2-4e1f-8dcb-05595a9cba1e">
+                    <propertyInstance
+                      Id="21eac766-6768-46b4-a8c1-ef02384b7379"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d50f79f-bbb0-43be-a2cd-c6b65112a6d2">
+                    <propertyInstance
+                      Id="777b2ded-f1dc-43f9-9b39-3ec65c36c607"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48674e22-fda6-43bf-bb94-cbcce4c677af">
+                    <propertyInstance
+                      Id="d643acda-420b-48da-9720-6c6ab6d2f2c4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e2a33ee-3efb-4dad-9713-734336793d04">
+                    <propertyInstance
+                      Id="80078d42-d65f-4a7f-9cde-6415e6e83be1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="063ff172-0917-4add-b998-3372e4182c14">
+                    <propertyInstance
+                      Id="17b5bddc-5a3e-4fc7-8025-91009ea2a7f3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fff44e8c-850c-4e5b-88d3-db7259186af4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="66ae55a1-5114-4fac-9768-c72e9c1c0da4"
+                      LastKnownName="ListaSorteio"
+                      LastKnownLocation="Package12_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba58ca72-27c9-4612-8f56-b1576f4c9ac9"
+                  name="dadosEntrada"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a5068132-f583-4fa1-8fca-cb0f07e394c9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3DObterListaSorteio OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada Type%3DDadosEntradaCadastrarListaSorteio)]) ParameterIdentifier%3DdadosEntrada"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d2377799-3b7e-442a-a9e9-799b501bf6c5"
+                      LastKnownName="DadosEntradaCadastrarListaSorteio"
+                      LastKnownLocation="Package8_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ed766896-ec07-4a9e-ac10-7793a1528701"
+            name="CriarDadosSaida"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="768332ea-4d1e-4c03-9749-8ce3bc6724d4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3DCriarDadosSaida"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="623b742b-75e4-4d34-be62-797615acccba"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25ac0dc3-dc45-4edd-a61f-bd24da137952">
+                    <propertyInstance
+                      Id="b62ca41f-ba24-4742-b79d-8ce205dec9e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="994a1702-84cb-4177-b5bb-bf1780c2faac">
+                    <propertyInstance
+                      Id="406a3ec0-d873-4528-b626-78f345be6237"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="413afd13-ed84-4132-ba76-bee10ab8c281">
+                    <propertyInstance
+                      Id="30b25598-b763-4a4c-99d4-a160ac08fc74"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0b1216b-5d06-44d1-a787-60e677859a2c">
+                    <propertyInstance
+                      Id="ba6bc643-0872-40ca-9972-181878b5a215"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f761f99e-6b45-4d3e-ad01-0afb1178f5f5">
+                    <propertyInstance
+                      Id="2584ef2a-7e11-42fe-b23a-847f15bb22ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b42b8e7-706a-46fb-8199-d9ee720639b6">
+                    <propertyInstance
+                      Id="3c726eb3-063c-4071-805c-a382b57aa3aa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c2b73be1-179b-4a6d-821c-f5e08eae2bb4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="285d74c0-2ecb-4e27-a004-3810d6765580"
+                      LastKnownName="DadosSaidaCadastrarListaSorteio"
+                      LastKnownLocation="Package10_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a5d5411b-66a0-4a23-8317-b62536b6c301"
+            name="Executar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3b31580e-3079-4af4-aac1-515717d213ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3DExecutar OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada Type%3DDadosEntradaCadastrarListaSorteio)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.Base Type%3D(Name%3DRespostaRequisicao GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida Type%3DDadosSaidaCadastrarListaSorteio)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57e6f271-6bdd-4c1a-bf72-b78d15ccad7d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecfaf224-8764-4cbe-a179-2d15ca00226a">
+                    <propertyInstance
+                      Id="209bff0a-4c57-4bd6-9e24-891bc256f669"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09cf8c34-c2e4-436c-b808-080083a76f14">
+                    <propertyInstance
+                      Id="d91d47c3-1831-489a-8440-9480d23786cb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d9c5995-ca91-4ee7-8e1b-f50a3479f856">
+                    <propertyInstance
+                      Id="6eea044d-a963-482a-adc9-43ca9fe7db81"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d653fd16-e991-4774-8a75-d55d413c4920">
+                    <propertyInstance
+                      Id="024f8157-c4db-43c5-9061-c50c517ad49c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd635301-373f-4350-b818-09c781c3cfd9">
+                    <propertyInstance
+                      Id="08fb98fc-1b65-450f-af3a-bc983e4e0d02"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f7c3da2-3dd7-46f8-9e2b-66b033c33ec2">
+                    <propertyInstance
+                      Id="23a322a3-4145-49fd-9ed8-f30e05ca3832"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7e13e83c-42b0-473b-b17f-19d506bbe72c"
+                  name="dadosEntrada"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="06500a48-329e-455c-9bfa-dcd1b4959c20"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3DExecutar OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada Type%3DDadosEntradaCadastrarListaSorteio)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.Base Type%3D(Name%3DRespostaRequisicao GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida Type%3DDadosSaidaCadastrarListaSorteio)]))]) ParameterIdentifier%3DdadosEntrada"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d2377799-3b7e-442a-a9e9-799b501bf6c5"
+                      LastKnownName="DadosEntradaCadastrarListaSorteio"
+                      LastKnownLocation="Package8_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="29677f0d-535a-4da6-a78b-fb943db3457c"
+                  name="respostaRequisicao"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5378c064-db55-42e2-ad0c-e1cb8b221358"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.Acoes Type%3DCadastrarListaSorteio Member%3D(Name%3DExecutar OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada Type%3DDadosEntradaCadastrarListaSorteio)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.Base Type%3D(Name%3DRespostaRequisicao GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida Type%3DDadosSaidaCadastrarListaSorteio)]))]) ParameterIdentifier%3DrespostaRequisicao"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="ec589e03-4a78-4169-a4ac-2dd89960d3ab"
+                      LastKnownName="RespostaRequisicao&lt;DadosSaidaCadastrarListaSorteio‎&gt;"
+                      LastKnownLocation="Package9_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1813d100-151f-46ed-8a84-4dec201e1dfa"
+            name="Executar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43a44211-7949-4193-b092-48262b7ccc2e"
+                  name="dadosEntrada"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="15eaf962-bf2d-4920-8182-85c499440b37"
+                      LastKnownName="TDadosEntrada"
+                      LastKnownLocation="Package9_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ea6a7ac-35ce-4de7-b1ff-97dabea92134"
+                  name="respostaRequisicao"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="563981c4-255f-4222-aa11-ed37d619caec"
+                      LastKnownName="TRespostaRequisicao"
+                      LastKnownLocation="Package9_0732.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

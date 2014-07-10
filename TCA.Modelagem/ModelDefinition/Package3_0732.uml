@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f7ef9a69-027c-4c9a-a072-7b6ce09619b2"
+  name="ListaSorteio"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="df9b4c66-1a92-43a9-9acd-692f122ddd05"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="98667101-7e66-4e49-9d1c-71f958140cd3"
+        LastKnownName="Acoes"
+        LastKnownLocation="Package4_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="40e3e2a0-1c19-4635-9313-09b5b6759b60"
+        LastKnownName="DadosEntrada"
+        LastKnownLocation="Package8_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="72f549c5-41ba-454e-aec0-d775c2c7b717"
+        LastKnownName="DadosSaida"
+        LastKnownLocation="Package10_0732.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7262d963-a577-4a69-8afe-e08285377fb6"
+        LastKnownName="AcoesInterfaces"
+        LastKnownLocation="Package13_0732.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

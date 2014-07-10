@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e9b24765-6c94-4b13-8a66-12bcb06a8595"
+  name="ListaSorteio"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d5b2318f-7845-4321-a91e-528eec80ca57"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.DAL.Interfaces.ListaSorteio"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="dc588ac3-5b13-4a9e-8da1-8f668aefe567"
+        name="RepositorioListaSorteio"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="eaa66a1e-8818-4e06-b16f-e1802205edeb"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.DAL.Interfaces%2Fbin%2FDebug%2FTCA.Nucleo.DAL.Interfaces.dll Namespace%3DTCA.Nucleo.DAL.Interfaces.ListaSorteio Type%3DRepositorioListaSorteio"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="566e4075-ef26-4a35-81f7-943834ec57f7"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="977a655f-ea96-4e2d-acfd-94b5627396cd">
+                <propertyInstance
+                  Id="9bcacb7a-3854-42f0-b7f1-1f08de74327b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4f83fe9-fa5a-438f-9563-42e1eb119c50">
+                <propertyInstance
+                  Id="1e772d0a-a55a-48b2-9146-9f5e57040a09"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="185df07e-03f0-4a60-82b2-0cdb586f9ce6">
+                <propertyInstance
+                  Id="cbb7a08d-cabc-4c19-98ec-e595c96f1a74"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10214ddd-4e1b-47a6-a8e9-5e594f0d5c29">
+                <propertyInstance
+                  Id="b07bfdfa-8f06-4ed5-a422-4447de4f0240"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="58290373-6e52-4ad1-a4a5-98205eb0efc1"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="5622acaf-b3d9-4615-bd8e-1fd57439837c"
+              LastKnownName="Repositorio&lt;ListaSorteio‎&gt;"
+              LastKnownLocation="Package_0800.uml" />
+          </generalization>
+          <generalization
+            Id="8ac05761-dd76-42ad-af4e-8a421f0d68cf"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="ca5abd47-ce91-44f9-87b9-da029b15b97f"
+              LastKnownName="Repositorio"
+              LastKnownLocation="Package_0800.uml" />
+          </generalization>
+          <generalization
+            Id="5682d5e3-4cf9-4ad3-90ff-d618a6dbefac"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="5a09db85-8eb9-4dd7-ba74-ad5d2b4953e9"
+              LastKnownName="Repositorio&lt;TEntidade‎&gt;"
+              LastKnownLocation="Package_0800.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

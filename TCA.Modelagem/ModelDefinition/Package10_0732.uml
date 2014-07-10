@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="72f549c5-41ba-454e-aec0-d775c2c7b717"
+  name="DadosSaida"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a7fd592e-6123-4240-9c31-9096221422bb"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="285d74c0-2ecb-4e27-a004-3810d6765580"
+        name="DadosSaidaCadastrarListaSorteio"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="50be6388-a5a9-4bc1-9bff-9a3e3f30b0e1"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida Type%3DDadosSaidaCadastrarListaSorteio"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9096c019-6b2b-4aaa-ae33-210f5266ca34"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb6b4015-d3ad-4535-ad0c-caccc7d98f19">
+                <propertyInstance
+                  Id="e43b2f6a-b3e9-46a2-aa9d-f437682474b4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c3d08f11-4fb6-4444-93cc-51e05c60537e">
+                <propertyInstance
+                  Id="c5e2b831-eb71-4e9f-a257-6d1999e6482b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5a186015-8a4c-40b2-8693-6ed601c2327c">
+                <propertyInstance
+                  Id="4892d368-1e32-4b1f-83ae-a617578a156c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ff2e99eb-9a3d-4259-b050-72f351145139">
+                <propertyInstance
+                  Id="7aa5c113-2635-42f5-9144-4db5fb9439ef"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="97929289-6050-4205-b3bc-9973452ca02e"
+            isDerived="false"
+            sourceEndRoleName="DadosSaidaCadastrarListaSorteio"
+            targetEndRoleName="IdListaSorteio"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a0f3f928-6e4e-4774-9802-7e9d58798755"
+              LastKnownName="Int64"
+              LastKnownLocation="Package_0759.uml" />
+            <description>Property IdListaSorteio references type Int64.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40e72d5f-872a-4809-8abc-a4a2efe06006"
+                  name="DadosSaidaCadastrarListaSorteio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="895a1a31-f267-4b62-939b-75402686436e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e7a38caf-897e-41c0-845e-b0466b0c9c93"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b96f6e4b-32d5-4b2b-b72f-f2850d61a445"
+                  name="IdListaSorteio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2da7ed8f-d7fa-44c7-8207-c36bd990bfc5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dc294be3-d0b4-4fd8-ae67-2c37f06ce014"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="cbbb750e-73c4-4ca8-8df6-ca57454893ad"
+            name="IdListaSorteio"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ba738947-d8a8-45ab-b0ff-fd7133ce1dc8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida Type%3DDadosSaidaCadastrarListaSorteio Member%3DIdListaSorteio"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="92378441-a394-469d-b6ae-a0d2e9c072f4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="339473a0-dd76-4365-ab2a-f77cd5c6d3d4">
+                    <propertyInstance
+                      Id="ec24e61f-51fc-406d-93fa-b7f271f890b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3428552e-ae80-467e-ab10-35e3ef2b869d">
+                    <propertyInstance
+                      Id="29efbea8-5e8d-4c13-b482-0b241201fb5c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c407d21-20d9-4ebe-a9f1-181f8389c31e">
+                    <propertyInstance
+                      Id="68fbec11-d259-4a21-a186-a618d6a3bc1e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cad60d9a-e3de-438a-bf01-1716e904ddcb">
+                    <propertyInstance
+                      Id="a446e613-bc8b-4d0b-a7de-2d3f85e1a3a3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93d0d5a5-b727-4edf-8aa0-0d22b5e71b42">
+                    <propertyInstance
+                      Id="45c198bf-6baf-4656-8f13-0e7ec0096176"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1037589a-4bd9-42d1-a817-27f528cf3009">
+                    <propertyInstance
+                      Id="160192ac-4070-4a04-97ff-117d4c9a794d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d485233-26c8-4794-8ce8-a3ff7cd4af7f">
+                    <propertyInstance
+                      Id="f311a1da-e1c3-4fff-b959-e6f3a3ed22ad"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a0f3f928-6e4e-4774-9802-7e9d58798755"
+                LastKnownName="Int64"
+                LastKnownLocation="Package_0759.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="784b0bd9-6986-4116-ae28-2d64d5ef2dc8"
+            name="DadosSaidaCadastrarListaSorteio"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="161cdf5d-fc93-41e7-b26e-151c33cde812"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRausch%2FDocuments%2FPESSOAL%2FProjetos%2Fprojetosorteador%2FTCA.Sorteador%2FTCA.Nucleo.CasosDeUso%2Fbin%2FDebug%2FTCA.Nucleo.CasosDeUso.dll Namespace%3DTCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida Type%3DDadosSaidaCadastrarListaSorteio Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="958b4a66-009d-4c1d-bb73-05b325f62a0b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9051dfa9-d976-4031-9be3-a175ae082d00">
+                    <propertyInstance
+                      Id="9851ecb1-456f-43a0-8a0f-07d00cdf6b2f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74272030-f9be-47c7-8d7a-26aed219c588">
+                    <propertyInstance
+                      Id="c69a5653-6c4f-4437-b40c-863fb368f756"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fb6be36-eb94-4859-87ab-6bfba857c43e">
+                    <propertyInstance
+                      Id="5584a9f3-fff3-40ad-bec7-fcb29f3d9fd4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ec436e0-de6a-453e-94cb-d100c91dc792">
+                    <propertyInstance
+                      Id="887e79fa-9512-47d7-81e4-53877b5a20d3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18d98f3a-fcc8-42c3-9700-b9bc0c3a57e3">
+                    <propertyInstance
+                      Id="61f7974b-61b7-48ff-895a-1c58f5f84cd8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4383c91a-cf6c-42cb-8552-fbae1c271310">
+                    <propertyInstance
+                      Id="59205594-2b15-4d15-b196-eeba05fbb3eb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
