@@ -43,10 +43,15 @@
     <Compile Include="Base\DadosSaida.cs" />
     <Compile Include="Base\Requisicao.cs" />
     <Compile Include="Base\RespostaRequisicao.cs" />
+    <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaCadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\Acoes\CadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\Acoes\CadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaCadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\DadosSaida\DadosSaidaCadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosSaida\DadosSaidaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\Excecoes\ListaSorteioSemNomeException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,9 +64,7 @@
       <Name>TCA.Nucleo.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ListaSorteio\Excecoes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

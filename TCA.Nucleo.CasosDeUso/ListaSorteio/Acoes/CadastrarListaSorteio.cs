@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using TCA.Nucleo.CasosDeUso.Base;
+﻿using TCA.Nucleo.CasosDeUso.Base;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.AcoesInterfaces;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida;
+using TCA.Nucleo.CasosDeUso.ListaSorteio.Excecoes;
 using TCA.Nucleo.DAL.Interfaces.ListaSorteio;
 
 namespace TCA.Nucleo.CasosDeUso.ListaSorteio.Acoes
@@ -19,22 +19,30 @@ namespace TCA.Nucleo.CasosDeUso.ListaSorteio.Acoes
         public void Executar(DadosEntradaCadastrarListaSorteio dadosEntrada,
             RespostaRequisicao<DadosSaidaCadastrarListaSorteio> respostaRequisicao)
         {
-            var novaListaSorteio = ObterListaSorteio(dadosEntrada);
+            ValidarDadosEntrada(dadosEntrada);
+
+            var novaListaSorteio = CriarListaSorteio(dadosEntrada);
 
             this.repositorioListaSorteio.Inserir(novaListaSorteio);
 
-            respostaRequisicao.ProcessarResposta(CriarDadosSaida());
+            respostaRequisicao.ProcessarResposta(CriarDadosSaida(novaListaSorteio));
         }
 
-        private DadosSaidaCadastrarListaSorteio CriarDadosSaida()
+        private static void ValidarDadosEntrada(DadosEntradaCadastrarListaSorteio dadosEntrada)
+        {
+            if (string.IsNullOrWhiteSpace(dadosEntrada.Nome))
+                throw new ListaSorteioSemNomeException();
+        }
+
+        private static DadosSaidaCadastrarListaSorteio CriarDadosSaida(Entidades.ListaSorteio.ListaSorteio novaListaSorteio)
         {
             return new DadosSaidaCadastrarListaSorteio()
             {
-                IdListaSorteio = this.repositorioListaSorteio.Listar().Max(listaSorteio => listaSorteio.Id)
+                IdListaSorteio = novaListaSorteio.Id
             };
         }
 
-        private Entidades.ListaSorteio.ListaSorteio ObterListaSorteio(DadosEntradaCadastrarListaSorteio dadosEntrada)
+        private static Entidades.ListaSorteio.ListaSorteio CriarListaSorteio(DadosEntradaCadastrarListaSorteio dadosEntrada)
         {
             return new Entidades.ListaSorteio.ListaSorteio()
             {

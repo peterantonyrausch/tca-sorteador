@@ -3,6 +3,7 @@ using TCA.Nucleo.CasosDeUso.Base;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.Acoes;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.DadosEntrada;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.DadosSaida;
+using TCA.Nucleo.CasosDeUso.ListaSorteio.Excecoes;
 using TCA.Nucleo.DAL.Interfaces.ListaSorteio;
 using TCA.Nucleo.Testes.Mocks;
 
@@ -33,7 +34,7 @@ namespace TCA.Nucleo.Testes.CasosDeUso.ListaSorteio
         }
 
         [Test]
-        public void TestarCadastrarListaSorteio()
+        public void TestarCadastroBasico()
         {
             var dadosEntrada = new DadosEntradaCadastrarListaSorteio()
             {
@@ -43,6 +44,14 @@ namespace TCA.Nucleo.Testes.CasosDeUso.ListaSorteio
             cadastrarLista.Executar(dadosEntrada, this);
 
             Assert.AreEqual(1, resultadoCadastrarLista.IdListaSorteio);
+        }
+
+        [Test]
+        public void TestarCadastroSemNome()
+        {
+            var dadosEntrada = new DadosEntradaCadastrarListaSorteio();
+
+            Assert.Throws<ListaSorteioSemNomeException>(() => cadastrarLista.Executar(dadosEntrada, this));
         }
 
         public void ProcessarResposta(DadosSaidaCadastrarListaSorteio dadosSaida)

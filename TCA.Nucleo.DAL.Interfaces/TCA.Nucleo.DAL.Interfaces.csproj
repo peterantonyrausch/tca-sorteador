@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Repositorio.cs" />
+    <Compile Include="ListaSorteio\RepositorioItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\RepositorioListaSorteio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
