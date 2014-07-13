@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Mock.cs" />
+    <Compile Include="CasosDeUso\ListaSorteio\TestarVisualizarItensListaSorteio.cs" />
+    <Compile Include="CasosDeUso\ListaSorteio\TestarVisualizarListasSorteio.cs" />
     <Compile Include="CasosDeUso\ListaSorteio\TesteCadastrarItemLista.cs" />
     <Compile Include="CasosDeUso\ListaSorteio\TesteCadastrarLista.cs" />
     <Compile Include="Mocks\MockRepositorioItemListaSorteio.cs" />

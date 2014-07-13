@@ -8,4 +8,10 @@
     {
         void Executar(TDadosEntrada dadosEntrada, TRespostaRequisicao respostaRequisicao);
     }
+
+    public interface Requisicao<in TRespostaRequisicao> : Requisicao
+        where TRespostaRequisicao : RespostaRequisicao
+    {
+        void Executar(TRespostaRequisicao respostaRequisicao);
+    }
 }
