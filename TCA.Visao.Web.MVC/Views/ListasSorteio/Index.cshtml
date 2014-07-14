@@ -1,0 +1,39 @@
+﻿@model IEnumerable<TCA.Visao.Web.MVC.Models.ListaSorteioViewModel>
+
+@{
+    ViewBag.Title = "Listas para sorteio";
+}
+
+<h2>Index</h2>
+
+<p>
+    @(Html.ActionLink("Nova", "Criar", null, new { @class = "btn btn-primary" }))
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Número
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdListaSorteio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @(Html.ActionLink("Visualizar", "VisualizarItens", new { id = item.IdListaSorteio, nome = item.Nome }, new { @class = "btn btn-primary" }))
+                @(Html.ActionLink("Editar", "Editar", new { id = item.IdListaSorteio }, new { @class = "btn btn-warning" }))
+                @(Html.ActionLink("Excluir", "Excluir", new { id = item.IdListaSorteio }, new { @class = "btn btn-danger" }))
+            </td>
+        </tr>
+    }
+</table>
