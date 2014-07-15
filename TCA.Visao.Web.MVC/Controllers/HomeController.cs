@@ -11,14 +11,14 @@ namespace TCA.Visao.Web.MVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Projeto The Clean Architecture - Sorteador";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Entre em contato!";
 
             return View();
         }

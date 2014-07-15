@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using System.Web.Routing;
 using TCA.DAL.EntityFramework.SQL.Repositorios.UnidadeDeTrabalho;
 using TCA.Nucleo.CasosDeUso.Base;
 using TCA.Nucleo.CasosDeUso.ListaSorteio.Acoes;
@@ -40,7 +39,7 @@ namespace TCA.Visao.Web.MVC.Controllers
         // GET: ListasSorteio/Details/5
         public ActionResult VisualizarItens(int id, string nome)
         {
-            return RedirectToAction("Index", "ItensListaSorteio", new { IdListaSorteio = id, Nome = nome });
+            return RedirectToAction("Index", "ItensListaSorteio", new { IdListaSorteio = id, nomeListaSorteio = nome });
         }
 
         // GET: ListasSorteio/Create

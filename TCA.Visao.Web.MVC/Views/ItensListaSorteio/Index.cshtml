@@ -7,7 +7,7 @@
 <h2>Itens da lista sorteio - @ViewBag.NomeListaSorteio</h2>
 
 <p>
-    @Html.ActionLink("Novo", "Criar", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Novo", "Criar", new { idListaSorteio = @ViewBag.IdListaSorteio, nomeListaSorteio = @ViewBag.NomeListaSorteio }, new { @class = "btn btn-primary" })
 </p>
 
 <table class="table">
@@ -31,10 +31,9 @@
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                @Html.ActionLink("Editar", "Editar", new { id = item.IdItemListaSorteio }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Editar", "Editar", new { id = item.IdItemListaSorteio, idListaSorteio = item.IdListaSorteio, nomeListaSorteio = @ViewBag.NomeListaSorteio }, new { @class = "btn btn-warning" })
                 @Html.ActionLink("Excluir", "Excluir", new { id = item.IdItemListaSorteio }, new { @class = "btn btn-danger" })
             </td>
         </tr>
     }
-
 </table>

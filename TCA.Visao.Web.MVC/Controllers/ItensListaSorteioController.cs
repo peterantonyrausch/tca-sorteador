@@ -29,21 +29,28 @@ namespace TCA.Visao.Web.MVC.Controllers
         }
 
         // GET: ItensListaSorteio
-        public ActionResult Index(long idListaSorteio, string nome)
+        public ActionResult Index(long idListaSorteio, string nomeListaSorteio)
         {
             visualizarItensListaSorteio.Executar(CriarEntradaVisualizarItensListaSorteio(idListaSorteio), this);
 
-            ViewBag.NomeListaSorteio = nome;
+            ViewBag.NomeListaSorteio = nomeListaSorteio;
+            ViewBag.IdListaSorteio = idListaSorteio;
 
             return View(itensListaSorteio);
         }
 
         // GET: ItensListaSorteio/Create
-        public ActionResult Criar()
+        public ActionResult Criar(long idListaSorteio, string nomeListaSorteio)
         {
-            ViewBag.NomeListaSorteio = "xxx";
+            ViewBag.NomeListaSorteio = nomeListaSorteio;
 
-            return View();
+            var novo = new ItemListaSorteioViewModel()
+            {
+                IdListaSorteio = idListaSorteio,
+                NomeListaSorteio = nomeListaSorteio
+            };
+
+            return View(novo);
         }
 
         // POST: ItensListaSorteio/Create
@@ -57,7 +64,12 @@ namespace TCA.Visao.Web.MVC.Controllers
                         CriarEntradaCadastrarItemListaSorteio(itemListaSorteioViewModel),
                         this);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Index",
+                    new
+                    {
+                        idListaSorteio = itemListaSorteioViewModel.IdListaSorteio,
+                        nomeListaSorteio = itemListaSorteioViewModel.NomeListaSorteio
+                    });
             }
             catch (ItemListaSorteioSemReferenciaParaListaException)
             {
@@ -72,15 +84,14 @@ namespace TCA.Visao.Web.MVC.Controllers
                 ModelState.AddModelError(string.Empty, "Não foi possível adicionar o item. Erro inesperado. Por favor, tente novamente.");
             }
 
-            ViewBag.NomeListaSorteio = "xxx";
-
             return View();
         }
 
         // GET: ItensListaSorteio/Edit/5
-        public ActionResult Editar(long id, long idListaSorteio)
+        public ActionResult Editar(long id, long idListaSorteio, string nomeListaSorteio)
         {
-            ViewBag.NomeListaSorteio = "xxx";
+            ViewBag.NomeListaSorteio = nomeListaSorteio;
+            ViewBag.IdListaSorteio = idListaSorteio;
 
             visualizarItensListaSorteio.Executar(CriarEntradaVisualizarItensListaSorteio(idListaSorteio), this);
 
@@ -91,7 +102,7 @@ namespace TCA.Visao.Web.MVC.Controllers
 
         // POST: ItensListaSorteio/Edit/5
         [HttpPost]
-        public ActionResult Editar(int id, FormCollection collection)
+        public ActionResult Editar(int id, ItemListaSorteio itemListaSorteio)
         {
             try
             {

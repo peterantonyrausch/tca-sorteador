@@ -6,6 +6,8 @@
 
         public long IdListaSorteio { get; set; }
 
+        public string NomeListaSorteio { get; set; }
+
         public string Descricao { get; set; }
     }
 }

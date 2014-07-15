@@ -18,10 +18,14 @@
                 </button>
                 @Html.ActionLink("TCA - Sorteador", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse navbar-left">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Listas para sorteio", "Index", "ListasSorteio")</li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Listas para sorteio", "Index", "ListasSorteio")</li>
                     <li>@Html.ActionLink("Sobre", "About", "Home")</li>
                     <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
                 </ul>
