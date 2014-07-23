@@ -16,16 +16,26 @@ namespace TCA.Visao.Web.MVC.Controllers
         RespostaRequisicao<DadosSaidaVisualizarItensListaSorteio>,
         RespostaRequisicao<DadosSaidaCadastrarItemListaSorteio>
     {
-        private readonly VisualizarItensListaSorteio visualizarItensListaSorteio;
         private readonly CadastrarItemListaSorteio cadastrarItemListaSorteio;
-        private readonly UnidadeTrabalhoSorteador unidadeTrabalho;
+        private readonly VisualizarItensListaSorteio visualizarItensListaSorteio;
         private IEnumerable<ItemListaSorteioViewModel> itensListaSorteio;
+        private long idItemListaSorteioCriado { get; set; }
 
         public ItensListaSorteioController()
         {
-            this.unidadeTrabalho = new UnidadeTrabalhoSorteador();
+            var unidadeTrabalho = new UnidadeTrabalhoSorteador();
             visualizarItensListaSorteio = new VisualizarItensListaSorteio(unidadeTrabalho.RepositorioItemListaSorteio);
             cadastrarItemListaSorteio = new CadastrarItemListaSorteio(unidadeTrabalho.RepositorioItemListaSorteio);
+        }
+
+        public void ProcessarResposta(DadosSaidaCadastrarItemListaSorteio dadosSaida)
+        {
+            idItemListaSorteioCriado = dadosSaida.IdItemListaSorteio;
+        }
+
+        public void ProcessarResposta(DadosSaidaVisualizarItensListaSorteio dadosSaida)
+        {
+            itensListaSorteio = ConverterParaViewModel(dadosSaida.ItensListaSorteio);
         }
 
         // GET: ItensListaSorteio
@@ -44,7 +54,7 @@ namespace TCA.Visao.Web.MVC.Controllers
         {
             ViewBag.NomeListaSorteio = nomeListaSorteio;
 
-            var novo = new ItemListaSorteioViewModel()
+            var novo = new ItemListaSorteioViewModel
             {
                 IdListaSorteio = idListaSorteio,
                 NomeListaSorteio = nomeListaSorteio
@@ -81,7 +91,8 @@ namespace TCA.Visao.Web.MVC.Controllers
             }
             catch
             {
-                ModelState.AddModelError(string.Empty, "Não foi possível adicionar o item. Erro inesperado. Por favor, tente novamente.");
+                ModelState.AddModelError(string.Empty,
+                    "Não foi possível adicionar o item. Erro inesperado. Por favor, tente novamente.");
             }
 
             return View();
@@ -97,18 +108,26 @@ namespace TCA.Visao.Web.MVC.Controllers
 
             var itemListaSorteio = itensListaSorteio.First(item => item.IdItemListaSorteio == id);
 
+            itemListaSorteio.IdListaSorteio = idListaSorteio;
+            itemListaSorteio.NomeListaSorteio = nomeListaSorteio;
+
             return View(itemListaSorteio);
         }
 
         // POST: ItensListaSorteio/Edit/5
         [HttpPost]
-        public ActionResult Editar(int id, ItemListaSorteio itemListaSorteio)
+        public ActionResult Editar(int id, ItemListaSorteioViewModel itemListaSorteio)
         {
             try
             {
                 // TODO: Add update logic here
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Index",
+                    new
+                    {
+                        idListaSorteio = itemListaSorteio.IdListaSorteio,
+                        nomeListaSorteio = itemListaSorteio.NomeListaSorteio
+                    });
             }
             catch
             {
@@ -138,42 +157,35 @@ namespace TCA.Visao.Web.MVC.Controllers
             }
         }
 
-        private static DadosEntradaVisualizarItensListaSorteio CriarEntradaVisualizarItensListaSorteio(long idListaSorteio)
+        private static DadosEntradaVisualizarItensListaSorteio CriarEntradaVisualizarItensListaSorteio(
+            long idListaSorteio)
         {
-            return new DadosEntradaVisualizarItensListaSorteio()
+            return new DadosEntradaVisualizarItensListaSorteio
             {
                 IdListaSorteio = idListaSorteio
             };
         }
 
-        private static DadosEntradaCadastrarItemListaSorteio CriarEntradaCadastrarItemListaSorteio(ItemListaSorteioViewModel itemListaSorteioViewModel)
+        private static DadosEntradaCadastrarItemListaSorteio CriarEntradaCadastrarItemListaSorteio(
+            ItemListaSorteioViewModel itemListaSorteioViewModel)
         {
-            return new DadosEntradaCadastrarItemListaSorteio()
+            return new DadosEntradaCadastrarItemListaSorteio
             {
                 IdListaSorteio = itemListaSorteioViewModel.IdListaSorteio,
                 Descricao = itemListaSorteioViewModel.Descricao
             };
         }
 
-        public void ProcessarResposta(DadosSaidaVisualizarItensListaSorteio dadosSaida)
-        {
-            this.itensListaSorteio = ConverterParaViewModel(dadosSaida.ItensListaSorteio);
-        }
-
-        private IEnumerable<ItemListaSorteioViewModel> ConverterParaViewModel(IEnumerable<ItemListaSorteio> itensListaSorteio)
+        private IEnumerable<ItemListaSorteioViewModel> ConverterParaViewModel(
+            IEnumerable<ItemListaSorteio> itensListaSorteio)
         {
             return itensListaSorteio.Select(item =>
-                new ItemListaSorteioViewModel()
+                new ItemListaSorteioViewModel
                 {
                     IdItemListaSorteio = item.Id,
                     IdListaSorteio = item.IdListaSorteio,
                     Descricao = item.Descricao
                 });
-        }
-
-        public void ProcessarResposta(DadosSaidaCadastrarItemListaSorteio dadosSaida)
-        {
-            unidadeTrabalho.Save();
         }
     }
 }

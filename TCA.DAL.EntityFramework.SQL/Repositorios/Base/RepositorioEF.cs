@@ -53,19 +53,40 @@ namespace TCA.DAL.EntityFramework.SQL.Repositorios.Base
 
         public void Inserir(TEntity entidade)
         {
-            entidades.Add(entidade);
+            try
+            {
+                entidades.Add(entidade);
+            }
+            finally
+            {
+                contexto.SaveChanges();
+            }
         }
 
         public void Atualizar(TEntity entidade)
         {
-            entidades.Attach(entidade);
-            contexto.Entry(entidade).State = EntityState.Modified;
+            try
+            {
+                entidades.Attach(entidade);
+                contexto.Entry(entidade).State = EntityState.Modified;
+            }
+            finally
+            {
+                contexto.SaveChanges();
+            }
         }
 
         public void Excluir(long id)
         {
-            var entidade = Obter(id);
-            Delete(entidade);
+            try
+            {
+                var entidade = Obter(id);
+                Delete(entidade);
+            }
+            finally
+            {
+                contexto.SaveChanges();
+            }
         }
 
         private void Delete(TEntity entidade)

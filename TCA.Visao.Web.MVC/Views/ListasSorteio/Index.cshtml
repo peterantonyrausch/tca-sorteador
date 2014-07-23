@@ -31,7 +31,7 @@
             </td>
             <td>
                 @(Html.ActionLink("Visualizar", "VisualizarItens", new { id = item.IdListaSorteio, nome = item.Nome }, new { @class = "btn btn-primary" }))
-                @(Html.ActionLink("Editar", "Editar", new { id = item.IdListaSorteio }, new { @class = "btn btn-warning" }))
+                @(Html.ActionLink("Editar", "Editar", new { idListaSorteio = item.IdListaSorteio }, new { @class = "btn btn-warning" }))
                 @(Html.ActionLink("Excluir", "Excluir", new { id = item.IdListaSorteio }, new { @class = "btn btn-danger" }))
             </td>
         </tr>

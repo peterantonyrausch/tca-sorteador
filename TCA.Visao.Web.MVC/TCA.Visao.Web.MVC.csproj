@@ -126,6 +126,8 @@
     </Compile>
     <Compile Include="Models\ItemListaSorteioViewModel.cs" />
     <Compile Include="Models\ListaSorteioViewModel.cs" />
+    <Compile Include="Presenters\ItensListaSorteioPresenter.cs" />
+    <Compile Include="Presenters\ListasSorteioPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

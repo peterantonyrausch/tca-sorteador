@@ -31,7 +31,7 @@
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                @Html.ActionLink("Editar", "Editar", new { id = item.IdItemListaSorteio, idListaSorteio = item.IdListaSorteio, nomeListaSorteio = @ViewBag.NomeListaSorteio }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Editar", "Editar", new { id = item.IdItemListaSorteio, idListaSorteio = @ViewBag.IdListaSorteio, nomeListaSorteio = @ViewBag.NomeListaSorteio }, new { @class = "btn btn-warning" })
                 @Html.ActionLink("Excluir", "Excluir", new { id = item.IdItemListaSorteio }, new { @class = "btn btn-danger" })
             </td>
         </tr>

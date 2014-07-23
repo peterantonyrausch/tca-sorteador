@@ -17,18 +17,13 @@ namespace TCA.DAL.EntityFramework.SQL.Repositorios.UnidadeDeTrabalho
             disposed = false;
         }
 
-        public void Save()
-        {
-            contexto.SaveChanges();
-        }
-
         protected virtual void Dispose(bool disposing)
         {
-            if (!this.disposed)
+            if (!disposed)
                 if (disposing)
                     contexto.Dispose();
 
-            this.disposed = true;
+            disposed = true;
         }
 
         public void Dispose()
@@ -41,25 +36,24 @@ namespace TCA.DAL.EntityFramework.SQL.Repositorios.UnidadeDeTrabalho
 
         #region [ Repositórios ]
 
-        private RepositorioListaSorteioEF repositorioListaSorteio;
+        private static RepositorioItemListaSorteioEF repositorioItemListaSorteio;
+        private static RepositorioListaSorteioEF repositorioListaSorteio;
 
         public RepositorioListaSorteioEF RepositorioListaSorteio
         {
             get
             {
                 return repositorioListaSorteio
-                    ?? (repositorioListaSorteio = new RepositorioListaSorteioEF(contexto));
+                       ?? (repositorioListaSorteio = new RepositorioListaSorteioEF(contexto));
             }
         }
-
-        private RepositorioItemListaSorteioEF repositorioItemListaSorteio;
 
         public RepositorioItemListaSorteioEF RepositorioItemListaSorteio
         {
             get
             {
                 return repositorioItemListaSorteio
-                    ?? (repositorioItemListaSorteio = new RepositorioItemListaSorteioEF(contexto));
+                       ?? (repositorioItemListaSorteio = new RepositorioItemListaSorteioEF(contexto));
             }
         }
 
