@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SorteadorConnectionString-Web.config Connection String" description="SorteadorConnectionString Connection String used in web.config by the application to access the database." defaultValue="Server=P3NWPLSK12SQL-v11.shr.prod.phx3.secureserver.net; Database=Sorteador; User Id=ususorteador; Password=ususorteador#123;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Particular\\CSharp\\Sorteador\\WebApi\\TCA\.WebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SorteadorConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
