@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.Entidades", "TCA.Nucleo.Entidades\TCA.Nucleo.Entidades.csproj", "{E8FF6729-F45B-4FE0-B57C-99864AF2AD31}"
 EndProject
@@ -13,11 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.DAL.Interfaces",
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TCA.Modelagem", "TCA.Modelagem\TCA.Modelagem.modelproj", "{E9309984-512E-48A1-A910-5C1750A1089F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Visao.Web.MVC", "TCA.Visao.Web.MVC\TCA.Visao.Web.MVC.csproj", "{89C98028-CCC9-448C-B063-E5AFA64659DB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.DAL.EntityFramework.SQL", "TCA.DAL.EntityFramework.SQL\TCA.DAL.EntityFramework.SQL.csproj", "{0BD19AD6-5E74-4C8B-80F1-2A580CAD6567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Visao.Web.MVC.Testes", "TCA.Visao.Web.MVC.Testes\TCA.Visao.Web.MVC.Testes.csproj", "{5A99551A-03A1-412A-AA39-2C0A63B55877}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.WebApi", "TCA.WebApi\TCA.WebApi.csproj", "{F45B442F-CB99-41CD-A03A-D03E33E00742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCA.Nucleo.Utils", "TCA.Nucleo.Utils\TCA.Nucleo.Utils.csproj", "{90F06E9B-813A-41F8-8955-483A7B871301}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,18 +45,18 @@ Global
 		{E9309984-512E-48A1-A910-5C1750A1089F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9309984-512E-48A1-A910-5C1750A1089F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9309984-512E-48A1-A910-5C1750A1089F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89C98028-CCC9-448C-B063-E5AFA64659DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89C98028-CCC9-448C-B063-E5AFA64659DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89C98028-CCC9-448C-B063-E5AFA64659DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89C98028-CCC9-448C-B063-E5AFA64659DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0BD19AD6-5E74-4C8B-80F1-2A580CAD6567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BD19AD6-5E74-4C8B-80F1-2A580CAD6567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BD19AD6-5E74-4C8B-80F1-2A580CAD6567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BD19AD6-5E74-4C8B-80F1-2A580CAD6567}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A99551A-03A1-412A-AA39-2C0A63B55877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A99551A-03A1-412A-AA39-2C0A63B55877}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A99551A-03A1-412A-AA39-2C0A63B55877}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A99551A-03A1-412A-AA39-2C0A63B55877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45B442F-CB99-41CD-A03A-D03E33E00742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45B442F-CB99-41CD-A03A-D03E33E00742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45B442F-CB99-41CD-A03A-D03E33E00742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45B442F-CB99-41CD-A03A-D03E33E00742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F06E9B-813A-41F8-8955-483A7B871301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F06E9B-813A-41F8-8955-483A7B871301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F06E9B-813A-41F8-8955-483A7B871301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F06E9B-813A-41F8-8955-483A7B871301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

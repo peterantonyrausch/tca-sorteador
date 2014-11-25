@@ -1,0 +1,8 @@
+﻿- Pare receber e retornar informações pela WebAPI não estão sendo utilizadas classes do Nucleo, foram criadas classes proprias na API
+	* Vantagens:
+		+ Da para fazer validações direto na API usando data notations nas classes
+		+ Para verificar se o dado passado como parametor é valido basta fazer como no exemplo
+		  if (!ModelState.IsValid)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+		+ Não expoem propriedades das classes do Nucleo
+		+ Você coloca na classe somente os atributos necessários para API

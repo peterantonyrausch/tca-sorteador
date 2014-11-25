@@ -45,22 +45,27 @@
     <Compile Include="Base\RespostaRequisicao.cs" />
     <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaCadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaSortearItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaVisualizarItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\AcoesInterfaces\RequisicaoParaVisualizarListasSorteio.cs" />
     <Compile Include="ListaSorteio\Acoes\CadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\Acoes\CadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\Acoes\SortearItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\Acoes\VisualizarItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\Acoes\VisualizarListasSorteio.cs" />
     <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaCadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaSortearItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaVisualizarItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosEntrada\DadosEntradaVisualizarListasSorteio.cs" />
     <Compile Include="ListaSorteio\DadosSaida\DadosSaidaCadastrarItemListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosSaida\DadosSaidaCadastrarListaSorteio.cs" />
+    <Compile Include="ListaSorteio\DadosSaida\DadosSaidaSortearItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosSaida\DadosSaidaVisualizarItensListaSorteio.cs" />
     <Compile Include="ListaSorteio\DadosSaida\DadosSaidaVisualizarListasSorteio.cs" />
     <Compile Include="ListaSorteio\Excecoes\ItemListaSorteioSemDescricaoException.cs" />
     <Compile Include="ListaSorteio\Excecoes\ItemListaSorteioSemReferenciaParaListaException.cs" />
+    <Compile Include="ListaSorteio\Excecoes\ListaSorteioSemItensException.cs" />
     <Compile Include="ListaSorteio\Excecoes\ListaSorteioSemNomeException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,6 +77,10 @@
     <ProjectReference Include="..\TCA.Nucleo.Entidades\TCA.Nucleo.Entidades.csproj">
       <Project>{e8ff6729-f45b-4fe0-b57c-99864af2ad31}</Project>
       <Name>TCA.Nucleo.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TCA.Nucleo.Utils\TCA.Nucleo.Utils.csproj">
+      <Project>{90f06e9b-813a-41f8-8955-483a7b871301}</Project>
+      <Name>TCA.Nucleo.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
